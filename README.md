@@ -18,6 +18,15 @@ At this point, the two options I see are:
 
 I spent substantial time on Path 1 without much success (see `branch-whack-a-mole`). So I would try path 2 next if it is actually feasible to work with an older version of MAVSDK. 
 
+**Notes:**  
+Automate incrementing the conandata.yml with  
+  
+```cmd 
+certutil -hashfile "path-to-my-file" SHA256
+```  
+
+and/or github API. This can help in pursuit of path 2.
+  
 ## License
 
 This project is licensed under MIT License [LICENSE.md](LICENSE.md).
