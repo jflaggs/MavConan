@@ -5,7 +5,7 @@ Conan recipie files for creating a conan package from MAVSDK source.
 
 The `main` branch successfully packages a much older version of [MAVSDK](https://github.com/mavlink/MAVSDK). I did this by modifying [sintef-ocean's](https://github.com/sintef-ocean/conan-mavsdk) golden conanfile for a much older version of MAVSDK.
 
-While attempting to bring the package to the latest version [v3.15.0](https://github.com/mavlink/MAVSDK/releases/tag/v3.15.0), it seems as though at some point MAVSDK stopped integrating with conan altogether. This could either be a legitamate issue OR due to lack of experience with conan on my part. 
+While attempting to bring the package to the latest version [v3.15.0](https://github.com/mavlink/MAVSDK/releases/tag/v3.15.0), it seems as though at some point MAVSDK stopped integrating with conan altogether. This could either be a legitamate issue with MAVSDK **OR** due to lack of experience with conan on my part (the more likely case). 
 
 ### Future Work
 
@@ -16,7 +16,7 @@ At this point, the two options I see are:
 3. A combination of 1 and 2; i.e. bring the conanfile to the latest version possible and then try to bring it up to date thereafter. 
 4. I sense that there may be another, much more manual option available. 
 
-I spent substantial time on Path 1 without much success (see `branch-whack-a-mole`). So I would try path 2 next if it is actually feasible to work with an older version of MAVSDK. 
+I spent substantial time (~150-200 local iterations) on Path 1 without much success (see `branch-whack-a-mole`). So I would try path 2 next if it is actually feasible to work with an older version of MAVSDK. 
 
 **Notes:**  
 Automate incrementing the conandata.yml with  
